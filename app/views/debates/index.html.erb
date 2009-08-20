@@ -1,0 +1,66 @@
+<div id="news">	
+	<h5>Current stuff</h5>
+	
+	<div id="news_container">
+		<div id="news_content">	
+			<ul>
+				<% for item in @news %>
+				<li>
+					<h6><%= item.title %></h6>
+					<p><%= item.content %></p>
+				</li>			
+				<% end %>
+			</ul>						
+		</div>
+	</div>
+</div>
+
+
+
+  <div id="new_proposition">
+	<% form_for(@debate) do |f| %>
+    <%= f.error_messages %>
+	
+    <p>
+      <%= f.label :proposition %><span class="helper_text">Make a statement to start a discussion</span><br />
+      <%= f.text_area :proposition %>
+    </p>
+	
+
+	<p>
+		<%= f.label :resource %><span class="helper_text">This can be a link or a Youtube or Vimeo url to be embedded</span><br />
+		<%= f.text_field :resource %>
+	</p>
+	
+	<p>
+      <%= f.hidden_field :user_id, {:value => current_user.id } %>
+	</p>
+    <p>
+      <%= f.submit "Lets Talk" %>        
+    </p>
+    <% end %>
+  </div>
+</div>
+<%= set_focus_to_id "debate_proposition" %>
+
+<div id="body_wrapper">
+
+   <% unless @debates.empty? %>
+		 <div class="debate_list_item" id="my_debates">  
+			<h2>My Discussions</h2>
+
+			<ul>
+					<%= render :partial => "debate_list", :collection => @debates %>
+			</ul>
+		  </div>
+	<% end %>
+	
+	<% unless @all_debates.empty? %>
+	  <div class="debate_list_item" id="all_debates">
+		<h2>Latest Public Discussions</h2>
+			<ul>
+				<%= render :partial => "debate_list", :collection => @all_debates %>
+			</ul>
+	  </div>
+	<% end %>
+</div>

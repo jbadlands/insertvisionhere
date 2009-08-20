@@ -1,0 +1,49 @@
+<div id="options_form">
+	<div class="option">
+		<% form_for(@debate) do |f| %>
+			<%= f.error_messages %>
+	
+			<h6>Status</h6>
+			<p>
+				<%= f.label :status_2, "Public" %><br />
+				<%= f.radio_button :status, 2 %>
+			</p>
+			<p>
+				<%= f.label :status_1, "Private" %><br />
+				<%= f.radio_button :status, 1 %>
+			</p>
+			<p>
+				<%= f.submit "Update", :class => "submit" %>
+			</p>
+		<% end %>
+	</div>
+	
+	<div class="option">
+		<% if @debate.discussion_status == 2 %>
+			<h6>This debate has been closed to further comments</h6>
+		<% else %>
+			<h6>Close this debate</h6>
+			<p>Note, This can not be undone.</p>
+			<% form_for(@debate) do |c| %>
+				<p>
+					<%= c.hidden_field :discussion_status, :value => 2 %>
+				</p>
+				<p>
+					<%= c.submit "Close", :class => "submit", :confirm => "Are you sure?" %>
+				</p>	
+			<% end 
+		end %>
+	</div>
+	
+	<div class="bottom_option" >
+		<h6>Topics</h6>
+		<% form_for @debate do |f| %>
+			<p>
+				<%= f.text_field :tag_list, :class => "topics_field" %>
+			</p>
+			<p>
+				<%= f.submit "Update", :class=> "submit" %>
+			</p>
+		<% end %>
+	</div>	
+	</div>

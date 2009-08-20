@@ -1,0 +1,2 @@
+page.insert_html :top, :option_box, :partial => "debates/options"
+page["options_form"].visual_effect :BlindDown

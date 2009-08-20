@@ -1,0 +1,9 @@
+page["new_argument_form"].visual_effect :fade
+page.replace_html :arguments_count, pluralize( @args.size, 'Argument', 'Arguments')
+page.insert_html :top, :arguments, :partial => 'argument' #, :object => @argument
+page["argument_#{@argument.id}"].visual_effect :Shake
+
+#page[:argument_form].reset
+page.replace_html :messages, "<p id='notice'>#{flash[:notice]}</p>"
+flash.discard
+page[:new_argument].visual_effect :ScrollTo

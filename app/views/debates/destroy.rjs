@@ -1,0 +1,3 @@
+page["my_debate_listing_#{params[:id]}"].visual_effect :SwitchOff
+page.replace_html :notice, flash[:notice]
+flash.discard

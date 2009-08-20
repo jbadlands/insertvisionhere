@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  argument: MyText
+  user_id: 1
+  debate: 1
+  side: MyString
+  support: 1
+
+two:
+  argument: MyText
+  user_id: 1
+  debate: 1
+  side: MyString
+  support: 1

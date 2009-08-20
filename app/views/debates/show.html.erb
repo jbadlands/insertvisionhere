@@ -1,0 +1,64 @@
+<div id="display_proposition">
+  <div>
+	<span>Proposition:   			
+			<% if debate_creator? %>	
+				<%= link_to_function("Options", nil, :id => "toggle") do |page|
+						page.visual_effect :toggle_slide, "option_box"
+						page[:toggle].replace_html "Options"
+				end %>
+			<%	end %>	
+	</span>
+	
+<% if debate_creator? %>	
+	<div id="option_box" style="display: none;" >
+		<%= render :partial => "debates/options" %>
+	</div>	
+<% end %>
+
+	<p class="proposition">
+	<%=h @debate.proposition %>
+	</p>
+
+	<%= debate_resource_html(@debate.resource) %>
+	 
+		
+		<p class="options">			
+			<% unless @debate.discussion_status == 1 %>
+				This discussion is finished |
+			<% end %>
+			
+			<% unless current_user.id == @debate.user_id %>
+				Created by <%= link_to @debate.user.login, profile_path(@debate.user), :method => "get" %> |
+			<% end %>
+			
+			<span id="arguments_count"><%= pluralize( @debate.arguments.size, "Argument", "Arguments") %></span> |
+				
+			<% unless @debate.tag_list.empty? %>
+				<% for topic in @debate.tag_list %>
+					<%= link_to topic, topic_path(:id => topic), :class => "topic"  %>
+				<% end %>
+			<% end %>
+		</p>
+	
+
+	</div>	
+</div>
+
+<div id="new_argument">
+<% unless has_argued(@debate.id) %>
+<%	unless @debate.discussion_status == 2 %>
+	<%= render :partial => "arguments/new" %>
+<%  end %>
+<% end %>
+</div>
+
+<div class="clear"></div>
+</div>
+
+<div id="body_wrapper">	
+	<div id="arguments" class="debate_list_item">
+		<% if has_argued(@debate.id) %>		
+			<%= render :partial => "arguments/argument" %>	
+		<% end %>
+	</div>	
+</div>

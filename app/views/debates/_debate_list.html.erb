@@ -1,0 +1,15 @@
+			<li>
+				<%= link_to debate_list.proposition, debate_list %>
+				<p class="debate_meta">
+				<% unless current_user.id == debate_list.user_id %>
+					Created by <%= link_to debate_list.user.login, profile_path(debate_list.user), :method => "get" %> |
+				<% end %>
+				<%= pluralize( debate_list.arguments.size, "Argument", "Arguments") %> | 
+				<% unless debate_list.tag_list.empty? %>
+					
+						<% for topic in debate_list.tag_list %>
+								<%= link_to topic, topic_path(:id => topic), :class => "topic" %>
+							<% end %>
+				<% end %>
+				</p>
+			</li>

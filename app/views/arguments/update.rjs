@@ -1,0 +1,5 @@
+page["argument_#{@argument.id}"].visual_effect :SlideUp
+#page["argument_#{@argument.id}"].remove
+page.replace_html :arguments_count, pluralize( @args.size, 'Argument', 'Arguments')
+page.replace_html :notice, flash[:notice]
+flash.discard

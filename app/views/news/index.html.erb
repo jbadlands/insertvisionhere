@@ -1,0 +1,24 @@
+<div class="page">
+<h1>News</h1>
+
+
+<% @news.each do |news| %>
+	
+	<h6><%=h news.title %></h6>
+    <p><%=h news.content %></p>
+    
+	<% if is_admin? %>
+		<%= link_to 'Edit', edit_news_path(news) %>
+		<%= link_to 'Destroy', news, :confirm => 'Are you sure?', :method => :delete %>
+	<% end %>
+  
+<% end %>
+
+	<% if is_admin? %>
+		<%= link_to 'New news', new_news_url %>
+	<% end %>
+</div>
+</div>
+<div id="body_wrapper">
+
+</div>

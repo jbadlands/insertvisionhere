@@ -1,0 +1,49 @@
+<div id="profile" class="page">
+<h2>Editing profile</h2>
+
+<% form_for(@profile, :html => {:multipart => true}) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= image_tag @profile.avatar.url(:thumb) %>
+	
+	<%= f.label :avatar %><br />
+    <%= f.file_field :avatar %>  
+  </p> 
+  <div> 
+ <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  </div>
+  <div>
+  <p>
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </p>
+   </div>
+   <div class="clear_left"></div>
+  <div>	
+  <p>
+    <%= f.label :interests %><br />
+    <%= f.text_area (:interests, :cols => "40", :rows => "10" ) %>
+ </p>
+ </div>
+ <div>
+ <p>
+     <%= f.label :change, "What change would you like to see?" %><br />
+    <%= f.text_area ( :change, :cols => "40", :rows => "10" ) %>
+  </p>
+   </div>
+   <p class="clear_left"></p>
+  <p>
+    <%= f.submit ( "Update", :class => "submit") %>
+  </p>
+<% end %>
+
+<%= link_to "Show", @profile %> |
+<%= link_to "Back", :back %>
+<div class="clear_left"></div>
+</div>
+</div>
+<div id="body_wrapper">
+</div>

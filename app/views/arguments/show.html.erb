@@ -1,0 +1,8 @@
+<p>
+	<%= @argument.argument %>
+	<% form_for @argument, :html => { :method => 'delete' } do |f| %>
+		<% f.hidden_field :id, :value => @argument.id %>
+		<%= submit_tag "Remove" %>
+<% end %>
+
+</p>

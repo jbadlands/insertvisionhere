@@ -1,0 +1,61 @@
+
+
+
+<div id="profile_info">
+
+<h6><%=h @profile.name %></h6>
+<p>
+</p>
+
+<h6>Location:</h6>
+<p>
+  <%=h @profile.location %>
+</p>
+  
+<h6>Interests:</h6>
+<p>
+  <%=h @profile.interests %>
+</p>
+
+<h6>What change would you like to see:</h6>
+<p>
+  <%=h @profile.change %>
+</p>
+
+<%= if can_edit_profile? 
+	link_to 'Edit', edit_profile_path(@profile) 
+	end 
+%>
+</div>
+
+<%= image_tag ( @profile.avatar.url(:medium), :id => "profile_image_medium", :alt => @profile.name ) %>
+
+<div class="clear_right"></div>
+</div>
+<div id="body_wrapper">
+
+  <div class="debate_list_item" id="my_debates">  
+	<h2>My discussions</h2>
+
+	<ul>
+		<% for debate in @my_debates %>
+		<li id="my_debate_listing_<%= debate.id %>">
+			<%= link_to debate.proposition, debate %>
+			<p class="debate_meta"><%= pluralize( debate.arguments.size, "Argument", "Arguments") %> |
+			<%= link_to "Options", edit_debate_path(debate.id) %>
+
+
+</p>
+		</li>
+		<% end %>
+	</ul>
+  </div>
+  
+	  <div class="debate_list_item" id="all_debates">
+		<h2>My opinions</h2>
+			<ul id="argument_container">
+				<%= render :partial => "arguments/my_argument", :collection => @arguments, :as => :argument %>
+			</ul>
+	  </div>
+
+</div>

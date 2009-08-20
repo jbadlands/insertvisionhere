@@ -1,0 +1,182 @@
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mDebate Create (0.000000)[0m   [0mINSERT INTO `debates` (`status`, `updated_at`, `proposition`, `user_id`, `created_at`) VALUES(1, '2009-07-27 12:45:39', NULL, NULL, '2009-07-27 12:45:39')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.016000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.015000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mSQL (0.000000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT `login` FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT `email` FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+  [4;36;1mUser Create (0.000000)[0m   [0;1mINSERT INTO `users` (`salt`, `updated_at`, `activated_at`, `crypted_password`, `remember_token_expires_at`, `activation_code`, `remember_token`, `login`, `email`, `created_at`) VALUES('5957a70f9ad36c36d300c6e907e1abb35c709bfa', '2009-07-27 13:09:57', NULL, '6c25b2c25b301e13aadcedb60353ead9037ef9c0', NULL, '0f31ea5dddca9cd6d6e49a82477f1ab9e6fa7697', NULL, 'quire', 'quire@example.com', '2009-07-27 13:09:57')[0m
+Sent mail to quire@example.com
+
+Date: Tue, 28 Jul 2009 01:09:57 +1200
+From: ADMINEMAIL
+To: quire@example.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/0f31ea5dddca9cd6d6e49a82477f1ab9e6fa7697
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT `login` FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT `email` FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+  [4;36;1mUser Create (0.000000)[0m   [0;1mINSERT INTO `users` (`salt`, `updated_at`, `activated_at`, `crypted_password`, `remember_token_expires_at`, `activation_code`, `remember_token`, `login`, `email`, `created_at`) VALUES('5957a70f9ad36c36d300c6e907e1abb35c709bfa', '2009-07-27 13:09:57', NULL, '6c25b2c25b301e13aadcedb60353ead9037ef9c0', NULL, '913bba568a1c21c501d6fd633f235cbdba5097ed', NULL, 'quire', 'quire@example.com', '2009-07-27 13:09:57')[0m
+Sent mail to quire@example.com
+
+Date: Tue, 28 Jul 2009 01:09:57 +1200
+From: ADMINEMAIL
+To: quire@example.com
+Subject: [YOURSITE] Please activate your new account
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Your account has been created.
+
+  Username: quire
+  Password: quire
+
+Visit this url to activate your account:
+
+  http://YOURSITE/activate/913bba568a1c21c501d6fd633f235cbdba5097ed
+  [4;35;1mUser Load (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+  [4;36;1mSQL (0.031000)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT `login` FROM `users` WHERE (LOWER(`users`.login) = 'quentin2' AND `users`.id <> 1) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT `email` FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;35;1mUser Update (0.000000)[0m   [0mUPDATE `users` SET `login` = 'quentin2', `updated_at` = '2009-07-27 13:09:57' WHERE `id` = 1[0m
+  [4;36;1mUser Load (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'quentin2' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;35;1mSQL (0.015000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000000)[0m   [0;1mUPDATE `users` SET `remember_token_expires_at` = '2009-08-10 13:09:57', `remember_token` = 'c65bc5695c8b0e855bf6de971b82a4ce3b21eede', `updated_at` = '2009-07-27 13:09:57' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.031000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000000)[0m   [0;1mUPDATE `users` SET `remember_token_expires_at` = '2009-08-03 13:09:57', `remember_token` = '03d7baf05466cb54e53217408e1fb81aa26af844', `updated_at` = '2009-07-27 13:09:57' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.016000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000000)[0m   [0;1mUPDATE `users` SET `remember_token_expires_at` = '2009-08-03 13:09:57', `remember_token` = '03d7baf05466cb54e53217408e1fb81aa26af844', `updated_at` = '2009-07-27 13:09:57' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.031000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT `login` FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT `email` FROM `users` WHERE (`users`.email IS NULL) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT `login` FROM `users` WHERE (`users`.login IS NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT `email` FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.016000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT `login` FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT `email` FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT `login` FROM `users` WHERE (LOWER(`users`.login) = 'quire') [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT `email` FROM `users` WHERE (LOWER(`users`.email) = 'quire@example.com') [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000000)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT `login` FROM `users` WHERE (LOWER(`users`.login) = 'quentin' AND `users`.id <> 1) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT `email` FROM `users` WHERE (LOWER(`users`.email) = 'quentin@example.com' AND `users`.id <> 1) [0m
+  [4;36;1mUser Update (0.000000)[0m   [0;1mUPDATE `users` SET `crypted_password` = '4b6dd603c64f03bc2f676658e287094878df9603', `updated_at` = '2009-07-27 13:09:57' WHERE `id` = 1[0m
+  [4;35;1mUser Load (0.000000)[0m   [0mSELECT * FROM `users` WHERE (login = 'quentin' and activated_at IS NOT NULL) LIMIT 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Update (0.000000)[0m   [0mUPDATE `users` SET `remember_token_expires_at` = '2009-08-10 13:09:57', `remember_token` = 'c65bc5695c8b0e855bf6de971b82a4ce3b21eede', `updated_at` = '2009-07-27 13:09:57' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Update (0.000000)[0m   [0mUPDATE `users` SET `remember_token_expires_at` = '2009-08-10 13:09:57', `remember_token` = 'c65bc5695c8b0e855bf6de971b82a4ce3b21eede', `updated_at` = '2009-07-27 13:09:57' WHERE `id` = 1[0m
+  [4;36;1mUser Update (0.000000)[0m   [0;1mUPDATE `users` SET `remember_token_expires_at` = NULL, `remember_token` = NULL, `updated_at` = '2009-07-27 13:09:57' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.000000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mROLLBACK[0m

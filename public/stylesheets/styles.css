@@ -1,0 +1,253 @@
+/* 		Reset    */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*		SCAFFOLFING ONES TO BE REMOVED	*/
+
+body { background-color: #D8EBBE;/*#1E1711; #473019;*/ color: #CCC; font-size: 16px; font-family: georgia;}
+
+.fieldWithErrors – Style for the form fields and labels with errors.
+
+#errorExplanation {
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  margin: -7px;
+}
+
+#errorExplanation p {
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+
+}
+
+container{margin: 0 auto; width: 1224px;}
+
+#home_info{float: left; width: 500px; font-size: 1.3em; font-family: georgia; color: #3E4C4C; }
+#home_info p{margin:43px 0 40px 100px; line-height: 1.6em; text-align: justify; font-style: italic; font-weight: bold;}
+
+.helper_text{font-family: arial; font-size: .8em; margin-left: 15px; font-weight: bold;}
+
+.clear_left{clear: left;}
+.clear_right{clear: right;}
+.clear{clear: both;}
+
+#notice{position: absolute; top: 85px; left: 100px; color: #84994A; font-family: arial; font-weight: bold; font-size: 1em; border: 1px solid #B9CD16; background: #FFFFDF; padding: 4px;}
+#error{position: absolute; top: 15px; left: 190px; color: #516361; font-family: arial; font-weight: bold; font-size: 1em;}
+/*			STANDARD			*/
+
+h1#logo{font-family: georgia, times, serif; font-size: 2em; font-weight: bolder; color: #444; position: absolute; top: 100px; left: 100px;}
+h6{font-size: 1.6em;}
+
+#header{ width: 100%; background: #FAFCE6 /*#ECF6E1 #dfeee4*/ url(../images/header-bg.png) repeat-x top center; min-height: 420px; padding-top: 100px;}
+
+#new_proposition{float: right; width: 600px;}
+#new_proposition input#debate_resource{width: 450px; border: 10px solid #bdd1c4; margin-top: 10px; padding: 8px; font-family: arial; font-size: 1.2em; font-weight: bold; color: #5c665f;}
+#new_proposition textarea#debate_proposition {height: 200px; width: 450px; border: 10px solid #bdd1c4; margin-top: 10px; padding: 8px; font-family: arial; font-size: 1.2em; font-weight: bold; color: #5c665f;}
+#new_proposition label {font-family: georgia, times, serif; font-weight: bolder; margin: 0 0 0 -30px; font-size: 1.3em; color: #5c665f;}
+#new_proposition #debate_submit{background: transparent; border: 2px solid #bdd1c4; margin-top:4px; font-family: georgia, times, serif; font-weight: bold; color: #5c665f; font-size: .9em; cursor: pointer; cursor: hand;}
+#new_proposition #debate_submit:hover{background: #bdd1c4; color: #222;}
+
+#body_wrapper{width: 100%; background: url(../images/body-bg.png) repeat-x top center; padding-top: 40px; margin-top: -8px; padding-bottom: 100px;}
+
+h1{font-family: georgia, times, serif; font-size: 1.55em; color: #596963;}
+h2{font-family: georgia, times, serif; font-size: 1.5em; color: #596963;}
+
+
+.debate_list_item{margin-left: 100px;}
+
+.debate_list_item ul{width: 450px;}
+.debate_list_item li{text-align: left; font-size: 1.5em; background: #3B3D38; border: 6px solid #2E3330; margin: 15px 0 30px 0; padding: 10px 10px 4px; color: #fff8ab; line-height: 1.2em;}
+.debate_list_item li p{margin:20px 0px -5px; border-top: 1px solid #424C48; padding: 3px; font-family: arial; font-size: 1.1em; color: #fff8ab; font-weight: bold;}
+.debate_list_item li p.debate_meta {font-size: .6em; color: #7F8C6C; line-height: 1.4em;}
+.debate_list_item li p.debate_meta span.remove {margin-left: 40px;}
+.debate_list_item li p.debate_meta  a{color: #C3D4AB;}
+.debate_list_item li p.debate_meta  a.topic{background: #545750; padding: 1px 3px 2px; margin: 3px; }
+.debate_list_item li p.debate_meta  a:hover{color: #E1F5C6;}
+.debate_list_item a {color: #F6F8CA; text-decoration: none;}
+.debate_list_item a:hover {text-decoration: underline;}
+
+
+#related_debates{margin-top: 40px;}
+#related_debates ul li{border: 4px solid #bdd1c4; width: 450px; margin-bottom: 20px; font-family: georgia, times, serif; font-size: 2em; font-weight: bolder; color: #444; padding: 10px;}
+#related_debates li p.debate_meta {font-size: .5em; color: #7F8C6C; line-height: 1.4em; border-top: 1px solid #CCC; padding: 3px; margin-bottom: 0; }
+#related_debates li p.debate_meta span.remove {margin-left: 40px;}
+#related_debates li p.debate_meta  a{color: #444;}
+#related_debates li p.debate_meta  a.topic{background: #FFF; padding: 1px 2px 2px; margin: 3px; }
+#related_debates li p.debate_meta  a:hover{color: #E1F5C6;}
+#related_debates a {color: #444; text-decoration: none;}
+#related_debates a:hover {text-decoration: underline;}
+
+
+#options_form{border: 6px solid #bdd1c4; margin-left: -100px !important; font-size: .6em;}
+#options_form div.option{border-bottom: 2px solid #ccc;}
+#options_form div.option, #options_form div.bottom_option{padding: 10px;}
+#options_form div.option:hover, #options_form div.bottom_option:hover{background: #FFFFDF;}
+#options_form div.bottom_option{border-bottom: none;}
+#options_form .topics_field{width: 400px;}
+#options_form h6{font-size: 1.2em; font-weight: bold;}
+#options_form div{margin: 0 !important;}
+#options_form label{font-size: .6em; color: #5C665F;}
+#options_form textarea, #options_form input, #options_form select{font-family: arial, helvetica, 'sans sefif'; padding: 2px; font-weight: bold; color: #5C665F; border: 3px solid #BDD1C4; margin: 10px 0;}
+#options_form form .submit{background: transparent; cursor: pointer; cursor: hand; font-family: georgia, times, serif; width: 80px; float: none;}
+#options_form form .submit:hover{background: #bdd1c4; color: #333; transparent; cursor: pointer; cursor: hand;}
+
+#my_debates{float: right; width: 600px;}
+
+#display_proposition{font-family: georgia, times, serif; font-size: 2em; font-weight: bolder; color: #444; /*position: absolute;*/float: left;  /*top: 80px; left: 130px;*/ width: 45%;}
+#display_proposition div{margin-left: 100px; margin-bottom: 40px;}
+#display_proposition object{margin-left: 45px;}
+#display_proposition span{color: #bdd1c4; font-size: .7em; margin-left: -25px; display: block; margin-bottom: 10px;}
+#display_proposition  div p span{margin: 0;  font-size: 1em; color: #444; display: inline;}
+
+
+#display_proposition p.options {text-align: justify; margin-top: 60px; font-size: .5em; font-weight: bold; line-height: 1.7em;}
+#display_proposition p.options a.topic{color: #bdd1c4; margin: 0 4px; background: #FFF; padding: 3px; margin: 3px;}
+#display_proposition p.options a.topic:hover{color: #444;}
+#display_proposition p.proposition{margin: 20px 0 20px 0; color: #3E4C4C;}
+#display_proposition a, #display_proposition #set_debate_options a{color: #0C0;}
+
+a#debate_resource{color: #7BA0A1}
+
+#new_argument {float: right; width: 45%; margin-bottom: 20px;}
+#new_argument #side_select_box{margin: 10px 0; text-align: left;}
+
+#new_argument textarea#argument_argument {height: 200px; width: 400px; border: 10px solid #bdd1c4; margin-top: 10px; padding: 8px; font-family: arial; font-size: 1.2em; font-weight: bold; color: #5c665f;}
+#new_argument label {font-family: georgia, times, serif; font-weight: bolder; margin: 0 0px 0 0; font-size: 1.3em; color: #5c665f;}
+#new_argument #argument_submit{background: transparent; border: 2px solid #bdd1c4; margin-top:4px; font-family: georgia, times, serif; font-weight: bold; color: #5c665f; font-size: .9em; cursor: pointer; cursor: hand;}
+#new_argument #argument_submit:hover{background: #bdd1c4; color: #222;}
+
+#sign_up_box{float: right; width: 600px; padding: 50px 0 0; font-size: 1.1em; font-family: georgia, times, sans-serif; color: #5c665f; }
+#sign_up_box h5{margin: 0 0 10px -20px;}
+#sign_up_box label{margin: 0 0 10px -5px;}
+#sign_up_box input{background: #FFF; border: 2px solid #bdd1c4; margin-top:4px; font-family: arial, helvetica, sans-serif; font-weight: bold; color: #5c665f; font-size: .85em; padding: 1px;}
+#sign_up_box .submit{font-family: georgia, times, serif; background: transparent;}
+#sign_up_box .submit:hover{background: #bdd1c4; color: #222; }
+
+
+
+
+#navigation{padding: 10px; color: #CABF9E; font-family: arial; text-align: left; background: #3F402E;}
+#navigation a{color: #CACFBC; padding: 9px;}
+#navigation a:hover{color: #E2E8D3;}
+#navigation h1 a{text-decoration: none;}
+
+#navigation h1{display: inline; font-family: arial, helvetica, sans-serif; font-weight: bolder; font-size: 1.7em; padding: 0 240px 0 100px; color: #CACFBC;}
+#navigation form{margin-left: 100px; text-align: right; }
+#navigation form p{display: inline; }
+#navigation form input{border: 3px solid #3D3D2C; color: #E2E8D3; background: #585940; font-family: arial, helvetica, sans-serif; font-weight: bolder;}
+#navigation form input.submit{cursor: pointer; cursor: hand; font-family: georgia, times, serif;}
+#navigation form input.submit:hover{background: #bdd1c4; color: #333; cursor: pointer; cursor: hand;}
+#navigation p{margin: 10px 0 10px; text-align: center;}
+#navigation p a img{margin: -4px 180px 0 100px; }
+
+#profile_info{width: 600px; float: right; color: #5C665F;}
+#profile_info a{color: #0C0; padding: 10px 0;}
+#profile_info p{font-size: 1.1em; width: 450px;}
+#profile_info h6{width: 600px; float: right; color: #5C665F; margin: 27px auto 7px; }
+#profile_image_medium{margin-left: 200px; border: 3px solid #BDD1C4;}
+
+.page{margin-left: 100px; padding-bottom: 50px;}
+.page p{margin: 15px 0;}
+.page a{color: #7BA0A1; padding: 10px 0;}
+.page label{font-size: 1.2em; font-weight: bold; color: #5C665F;}
+.page img{border: 3px solid #BDD1C4; }
+
+.page textarea, .page input, .page select{font-family: arial, helvetica, 'sans sefif'; padding: 2px; font-weight: bold; color: #5C665F; border: 3px solid #BDD1C4; width: 400px;}
+.page form .submit{background: transparent; cursor: pointer; cursor: hand; font-family: georgia, times, serif; width: 80px; float: none;}
+.page form .submit:hover{background: #bdd1c4; color: #333; transparent; cursor: pointer; cursor: hand;}
+
+#profile form div{float: left; margin-right: 30px;}
+
+#all_profiles{margin: 20px 0 0 ; width: 700px;}
+#all_profiles li div h6 a{color: #5C665F}
+#all_profiles li div h6 a:hover{color: #6C776F}
+#all_profiles li{margin: 50px 0;}
+#all_profiles li img{float:left;}
+#all_profiles li div.content{margin-left: 180px; color: #444; font-size: 1.2em; font-family: georgia; padding: 0 10px 10px;}
+
+.topic1 { font-size: 1.0em; }
+.topic2 { font-size: 1.2em; }
+.topic3 { font-size: 1.4em; }
+.topic4 { font-size: 1.6em; }
+
+input#argument_submit{background: none; border: none; display: inline; font-family: arial; color: #E1F5C6;}
+form.edit_argument {display: inline;}
+
+
+#news{width: 45%; float: left; font-family: arial;}
+#news a{margin-left: 100px;}
+#news ul li{margin: 0 0 30px 0;}
+
+#news h5{font-family: georgia, times, serif; font-weight: bolder; margin: 0 0 15px 100px; font-size: 1.3em; color: #5C665F;}
+#news_container{width: 450px; position: relative; overflow: hidden; margin-left: 100px; height: 300px;}
+#news_content{}
+#news_content h6{font-weight: bold; font-size: 1.1em; color: #677878; height: 28px; background: url(../images/attachment.png) no-repeat left top; padding-left: 35px; padding-top: 5px; vertical-align: text-bottom;}
+#news_content p{padding-left: 35px; margin-top: -5px; font-size: 1em; line-height: 1.25em; text-align: justify; color: #839494;}
+
+.body_text{font-size: .8em; line-height: 1.25em; text-align: justify; color: #839494; font-weight: normal!important; font-style: normal!important; font-family: arial;}
+
+
+
+

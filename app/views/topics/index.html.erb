@@ -1,0 +1,11 @@
+<div class="page"> 
+ <% tag_cloud @topics, %w(topic1 topic2 topic3 topic4) do |tag, css_class| %>
+   <h2><%= link_to tag.name, { :action => :show, :id => tag.name }, :class => css_class %></h2>
+  <% end %>
+  
+ </div>
+ 
+ </div>
+ <div id="body_wrapper">
+ 
+ </div>

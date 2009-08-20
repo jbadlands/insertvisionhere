@@ -1,0 +1,53 @@
+<div id="header">
+
+<div id="navigation">
+<% form_tag session_path do -%>
+<p><label for="login">Login</label>
+<%= text_field_tag 'login' %></p>
+
+<p><label for="password">Password</label>
+<%= password_field_tag 'password' %></p>
+
+
+<p><label for="remember_me">Remember me:</label>
+<%= check_box_tag 'remember_me' %></p>
+
+
+<p><%= submit_tag 'Log in', :class => 'submit' %></p>
+<% end -%>
+
+</div>
+
+<div id="home_info" >
+  <h1 id="logo"><img src="images/logo.png" alt="Insert Vision Here" /></h1>
+  <p>
+	Create and participate in opiniated discussions about anything you like. A forum for posing questions and seeking opinions with all the traditional online forum bullshit wiped out. 
+	
+  </p>
+</div>
+  
+  
+	<div id="sign_up_box">
+		<%= error_messages_for :user %>
+		<h5>Sign Up</h5>
+		<% form_for :user, :url => users_path do |f| -%>
+		<p><label for="login">Username</label><br/>
+		<%= f.text_field :login %></p>
+
+		<p><label for="email">Email</label><br/>
+		<%= f.text_field :email %></p>
+
+		<p><label for="password">Password</label><br/>
+		<%= f.password_field :password %></p>
+
+		<p><label for="password_confirmation">Confirm Password</label><br/>
+		<%= f.password_field :password_confirmation %></p>
+
+		<p><%= submit_tag 'Sign up', :class => "submit" %></p>
+		<% end -%>
+	</div>
+</div>
+
+<div id="body_wrapper">
+
+</div>

@@ -1,0 +1,7 @@
+#page["argument_#{params[:id]}"].visual_effect :Fade
+page["argument_container"].visual_effect :Fade
+page.replace_html :arguments_count, pluralize( @args, 'Argument', 'Arguments')
+page.replace_html :messages, "<p id='notice'>#{flash[:notice]}</p>"
+flash.discard
+page.replace_html :new_argument, :partial => "arguments/new"
+page["header"].visual_effect :ScrollTo

@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  #proposition: This is the body of a proposition
+  user_id: 10
+
+two:
+  #proposition: This is also the body of a proposition
+  user_id: 11

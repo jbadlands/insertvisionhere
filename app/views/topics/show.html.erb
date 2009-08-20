@@ -1,0 +1,14 @@
+<div class="page">
+<h2>Debates tagged with <%= params[:id] %></h2>
+<% unless @topic.empty? %>
+	<div id="related_debates">
+		<ul>
+			<%= render :partial => "debates/debate_list", :collection => @topic %>
+		<ul>
+	</div>
+<% end %>
+</div>
+</div>
+ <div id="body_wrapper">
+ 
+ </div>

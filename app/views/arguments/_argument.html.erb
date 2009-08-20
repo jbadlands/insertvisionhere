@@ -1,0 +1,21 @@
+<div id="argument_container">
+	<h2>Arguments</h2> 
+		<ul id="arguments_list">
+		<% for argument in @debate.arguments %>
+			<li id="argument_<%= argument.id %>"><%= argument.argument %>
+				<p class="debate_meta">
+					Argued by <%= link_to argument.user.login, profile_path(argument.user), :method => :get %>
+			
+				<% if argument_creator(argument.user_id) %>
+					<span class="remove">
+						<% remote_form_for "argument", :url => debate_argument_path(@debate, argument), :html => {:href => "/argument/#{argument.id}/edit", :method => :delete} do |c| %>
+							<%= c.hidden_field :debate_id, :value => @debate.id %>
+							<%= c.submit "Remove", :class => "submit", :confirm => "Are you sure?" %>
+						<% end %>
+					</span>
+				<% end %>
+				</p>
+			</li>
+		<% end %>
+		</ul>
+</div>

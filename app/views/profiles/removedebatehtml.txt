@@ -1,0 +1,1 @@
+			<%= link_to_remote ("Remove", :url  => debate_url(debate.id), :method => :delete, :html => {:href => url_for(:controller => :debates, :action => "edit", :id => debate.id )}) %>

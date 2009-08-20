@@ -1,0 +1,9 @@
+<li>
+<%= image_tag ( profile.avatar.url(:thumb), :class => "profile_image_thumb", :alt => profile.name ) %>
+<div class="content">
+	<h6><%= link_to profile.name,  profile_path(profile.user_id) %></h6>
+	<p><%= profile.location %></p>
+	<p><%= profile.interests %></p>
+</div>
+<div class="clear_left"></div>
+</li>

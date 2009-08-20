@@ -1,0 +1,7 @@
+	<li id="argument_<%= my_argument.id %>">
+		<%=  link_to my_argument.argument, debate_url(my_argument.debate_id) %>
+			<p class="debate_meta">
+				Argued by <%= link_to my_argument.user.login, profile_path(my_argument.user), :method => :get %>
+
+			</p>
+	</li>

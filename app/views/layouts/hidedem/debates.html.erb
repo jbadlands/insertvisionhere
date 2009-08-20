@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Debates: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag "styles" %>
+  <%= javascript_include_tag :defaults %>
+</head>
+<body>
+<div id="header">
+	<div id="navigation">
+		<%= link_to image_tag("small_logo.png"), "/"  %>
+		<p>
+		<%= link_to "Home", "/debates" %> |
+		<%= link_to "People", "/profiles" %> | 
+		Logged in as <%= link_to current_user.login, profile_path(current_user.id) %> |
+		<%= link_to "Log Out", "/logout" %>
+		</p>
+	</div>
+<p id="notice"><%= flash[:notice] %></p>
+<p id="error"><%= flash[:error] %></p>
+
+<%= yield  %>
+
+</body>
+</html>
